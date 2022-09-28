@@ -1,4 +1,5 @@
 #/bin/sh
 
 export LD_LIBRARY_PATH=.
-sh ~/mjpg_streamer/mjpg-streamer-experimental/mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -hf"
+cd ~/mjpg_streamer/mjpg-streamer-experimental/
+sh ./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -hf"
