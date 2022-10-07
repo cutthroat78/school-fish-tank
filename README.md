@@ -10,6 +10,7 @@ Raspberry Pi project to monitor and provide a camera feed of my secondary school
 - [ ] Forward website and camera feed to internet
 - [ ] make website nice looking
 - [ ] get sensor readings to live update and not have to reload site to see new readings
+- [ ] send emails for each sensor when it goes out of a certain range
 - [ ] get pi to autostart start.sh
 - [x] Log info into csv file
 - [ ] Make graph from csv file
