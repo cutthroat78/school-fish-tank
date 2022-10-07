@@ -8,9 +8,11 @@ pm = PlantMonitor()
 
 filename = "~/data/" + sys.argv[1]
 
-if not os.path.exists(filename):
-    with open(filename, 'w') as fp:
-        f.write("time,water level(%),temp(°C),humidity(%)\n")
+try:
+    with open(filename, 'x') as fp:
+        fp.write("time,water level(%),temp(°C),humidity(%)\n")
+except:
+    print('File already exists')
 
 f = open(filename, "w")
 
