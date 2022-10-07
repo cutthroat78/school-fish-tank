@@ -6,7 +6,7 @@ import sys
 from plant_monitor import PlantMonitor
 pm = PlantMonitor()
 
-filename = "~/data/" + sys.argv[1]
+filename = "/home/pi/data/" + sys.argv[1]
 
 try:
     with open(filename, 'x') as fp:
