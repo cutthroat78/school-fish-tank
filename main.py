@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from flask import Flask, render_template
 from plant_monitor import PlantMonitor
 pm = PlantMonitor()

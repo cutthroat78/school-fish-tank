@@ -7,3 +7,5 @@ git clone https://github.com/jacksonliam/mjpg-streamer.git
 cd mjpg-streamer/mjpg-streamer-experimental/
 make CMAKE_BUILD_TYPE=Debug
 sudo make install
+
+mkdir ~/data
