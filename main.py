@@ -6,6 +6,7 @@ from picamera import PiCamera
 
 pm = PlantMonitor()
 camera = PiCamera()
+camera.resolution = (1024, 768)
 
 app = Flask(__name__)
 
