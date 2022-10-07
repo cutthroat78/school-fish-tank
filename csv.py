@@ -8,12 +8,10 @@ pm = PlantMonitor()
 
 filename = "/home/pi/data/" + sys.argv[1]
 
-f = open(filename, "w")
-
 if os.path.exists(filename) = False:
+    f = open(filename, "w")
     f.write("time,water level(%),temp(°C),humidity(%)\n")
-
-f.close()
+    f.close()
 
 f = open(filename, "a")
 
