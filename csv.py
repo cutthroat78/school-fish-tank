@@ -8,8 +8,7 @@ pm = PlantMonitor()
 
 filename = "~/data/" + sys.argv[1]
 
-if os.path.exists(file_path):
-else:
+if not os.path.exists(file_path):
     with open(filename, 'w') as fp:
         f.write("time,water level(%),temp(°C),humidity(%)\n")
 
