@@ -1,3 +1,3 @@
 #/bin/sh
 
-sudo python3 ~/School-Fish-Tank/main.py
+sudo python3 /home/pi/School-Fish-Tank/main.py
