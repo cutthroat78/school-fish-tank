@@ -10,7 +10,7 @@ filename = "/home/pi/data/" + sys.argv[1]
 
 f = open(filename, "w")
 
-if os.stat(filename).st_size == 0:
+if os.path.exists(filename) = False:
     f.write("time,water level(%),temp(°C),humidity(%)\n")
 
 f.close()
