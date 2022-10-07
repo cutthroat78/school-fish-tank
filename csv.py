@@ -8,13 +8,13 @@ pm = PlantMonitor()
 
 filename = "/home/pi/data/" + sys.argv[1]
 
+f = open(filename, "w")
+
 try:
     with open(filename, 'x') as fp:
         fp.write("time,water level(%),temp(°C),humidity(%)\n")
 except:
     print('File already exists')
-
-f = open(filename, "w")
 
 t = time.strftime("%H:%M:%S", time.localtime())
 
