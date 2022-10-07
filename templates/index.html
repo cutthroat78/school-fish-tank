@@ -1,7 +1,11 @@
 <html>
-<body>
-	<h1>Moisture: {{ wetness }}</h1>
-	<h1>Temperature: {{ temp }}</h1>
-	<h1>Humidity: {{ humidity }}</h1>
-</body>
+  <head>
+    <title>Fish Tank Monitoring</title>
+  </head>
+  <body>
+    <h1>Moisture: {{ wetness }}</h1>
+    <h1>Temperature: {{ temp }}</h1>
+    <h1>Humidity: {{ humidity }}</h1>
+    <img src="{{ url_for('video_feed') }}">
+  </body>
 </html>
