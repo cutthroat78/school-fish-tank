@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template
+from flask import Flask, render_template, Response
 from plant_monitor import PlantMonitor
 from camera import Camera
 
