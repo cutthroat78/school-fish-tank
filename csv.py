@@ -13,6 +13,6 @@ f = open(filename, "w")
 if os.stat(filename).st_size == 0:
     f.write("time,water level(%),temp(°C),humidity(%)\n")
 
-t = time.strftime("%H:%M:%S", time.localtime())
+t = time.strftime("%H:%M", time.localtime())
 
 f.write(t + "," + str(pm.get_wetness()) + "," + str(pm.get_temp()) + "," + str(pm.get_humidity()))
