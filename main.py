@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template, Response
 from plant_monitor import PlantMonitor
-from camera_pi import PiCamera
+from camera_pi import Camera
 
 pm = PlantMonitor()
 
