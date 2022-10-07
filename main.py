@@ -2,11 +2,9 @@
 
 from flask import Flask, render_template, Response
 from plant_monitor import PlantMonitor
-from picamera import PiCamera
+from camera_pi import PiCamera
 
 pm = PlantMonitor()
-camera = PiCamera()
-camera.resolution = (1024, 768)
 
 app = Flask(__name__)
 
