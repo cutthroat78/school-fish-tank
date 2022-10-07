@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import time
 import os
+import sys
 
 from plant_monitor import PlantMonitor
 pm = PlantMonitor()
