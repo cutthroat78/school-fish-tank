@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Fish Tank Monitoring</title>
-    <meta http-equiv="Refresh" content="300">
+    <meta http-equiv="Refresh" content="5">
     <style>
     body {
 	background-color: black;
@@ -22,11 +22,11 @@
   <body>
     <table style="width: 100%;">
       <tr>
-	      <td class="info" style="background-color: Tomato">Moisture:<br>{{ moisture  }}%</td>
+	      <td class="info" style="background-color: Tomato">Moisture:<br>{{ moisture }}%</td>
 	<td style="width: 20%"></td>
-	<td class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temperature  }}°C</td>
+	<td class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temperature }}°C</td>
 	<td style="width: 20%"></td>
-	<td class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity  }}%</td>
+	<td class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity }}%</td>
       </tr>
     </table>
     <img src="{{ url_for('video_feed') }}">
