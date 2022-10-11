@@ -31,7 +31,7 @@ def video_feed():
 
 @app.route('/moisture')
 def moisture():
-    return Response(str(pm.get_wetness())
+    return Response(str(pm.get_wetness()))
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
