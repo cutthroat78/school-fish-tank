@@ -1,11 +1,37 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Fish Tank Monitoring</title>
+    <style>
+    body {
+	background-color: black;
+    }
+    img {
+	text-align: center;
+    }
+    .info {
+	color: white;
+	float: left;
+	width: 30%;
+     }
+    .gap {
+        width: 10%;
+     }
+    div:after {
+        content: "";
+        display: table;
+        clear: both;
+     }
+    </style>
   </head>
   <body>
-    <h1>Moisture: {{ wetness }}</h1>
-    <h1>Temperature: {{ temp }}</h1>
-    <h1>Humidity: {{ humidity }}</h1>
+    <div>
+      <p class="info" style="background-color: Tomato;">Moisture: {{ wetness }}%</p>
+      <p class="gap"></p>
+      <p class="info" style="background-color: MediumSeaGreen;">Temperature: {{ temp }}°C</p>
+      <p class="gap"></p>
+      <p class="info" style="background-color: SlateBlue;">Humidity: {{ humidity }}%</p>
+    </div>
     <img src="{{ url_for('video_feed') }}">
   </body>
 </html>
