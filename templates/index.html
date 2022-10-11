@@ -7,16 +7,12 @@
 	background-color: black;
     }
     img {
-	float: center;
+	align: center;
     }
     .info {
 	color: white;
 	font-size: 60px;
-	float: left;
 	width: 30%;
-     }
-    .gap {
-        width: 10%;
      }
     div:after {
         content: "";
@@ -27,11 +23,9 @@
   </head>
   <body>
     <div>
-      <p class="info" style="background-color: Tomato;">Moisture:<br>{{ wetness }}%</p>
-      <p class="gap"> </p>
-      <p class="info" style="background-color: MediumSeaGreen;">Temperature:<br>{{ temp }}°C</p>
-      <p class="gap"> </p>
-      <p class="info" style="background-color: SlateBlue;">Humidity:<br>{{ humidity }}</p>
+      <p class="info" style="background-color: Tomato; float: left;">Moisture:<br>{{ wetness }}%</p>
+      <p class="info" style="background-color: MediumSeaGreen; float: center;">Temperature:<br>{{ temp }}°C</p>
+      <p class="info" style="background-color: SlateBlue; float: right;">Humidity:<br>{{ humidity }}%</p>
     </div>
     <img src="{{ url_for('video_feed') }}">
   </body>
