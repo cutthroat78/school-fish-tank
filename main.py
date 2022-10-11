@@ -11,12 +11,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def index():
-    templateData = {
-            'wetness' : str(pm.get_wetness()),
-            'temp' : str(pm.get_temp()),
-            'humidity' : str(pm.get_humidity())
-            }
-    return render_template('index.html', **templateData)
+    return render_template('index.html')
 
 def gen(camera):
     yield b'--frame\r\n'
@@ -32,6 +27,14 @@ def video_feed():
 @app.route('/moisture')
 def moisture():
     return Response(str(pm.get_wetness()))
+
+@app.route('/temperature')
+def moisture():
+    return Response(str(pm.get_temp()))
+
+@app.route('/humidity')
+def moisture():
+    return Response(str(pm.get_humidity()))
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
