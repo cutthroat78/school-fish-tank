@@ -9,7 +9,7 @@
     .info {
 	color: white;
 	font-size: 60px;
-	width: 33.33%;
+	width: 33%;
      }
     div:after {
         content: "";
@@ -25,7 +25,7 @@
         <td class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temp }}°C</td>
         <td class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity }}%</td>
       </tr>
-    </div>
+    </table>
     <img src="{{ url_for('video_feed') }}">
   </body>
 </html>
