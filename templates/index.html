@@ -11,6 +11,7 @@
     }
     .info {
 	color: white;
+	font-size: 72px;
 	float: left;
 	width: 30%;
      }
@@ -26,11 +27,11 @@
   </head>
   <body>
     <div>
-      <p class="info" style="background-color: Tomato;">Moisture: {{ wetness }}%</p>
+      <p class="info" style="background-color: Tomato;">Moisture:<br>{{ wetness }}%</p>
       <p class="gap"></p>
-      <p class="info" style="background-color: MediumSeaGreen;">Temperature: {{ temp }}°C</p>
+      <p class="info" style="background-color: MediumSeaGreen;">Temperature:<br>{{ temp }}°C</p>
       <p class="gap"></p>
-      <p class="info" style="background-color: SlateBlue;">Humidity: {{ humidity }}%</p>
+      <p class="info" style="background-color: SlateBlue;">Humidity:<br>{{ humidity }}</p>
     </div>
     <img src="{{ url_for('video_feed') }}">
   </body>

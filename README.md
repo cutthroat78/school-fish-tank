@@ -14,4 +14,4 @@ Raspberry Pi project to monitor and provide a camera feed of my secondary school
 - [ ] get pi to autostart start.sh
 - [x] Log info into csv file
 - [ ] Make graph from csv file
-- [ ] Make a csv file for every week
+- [ ] Make a csv file for every day
