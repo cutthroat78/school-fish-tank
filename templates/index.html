@@ -24,13 +24,15 @@
       <tr>
 	<td class="info" style="background-color: Tomato">Moisture:<br><p id="moisture"></p>%</td>
 	<td style="width: 20%"></td>
-        <td class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ url_for('temperature') }}°C</td>
+        <td class="info" style="background-color: MediumSeaGreen">Temperature:<br><p id="temperature"></p>°C</td>
 	<td style="width: 20%"></td>
-        <td class="info" style="background-color: SlateBlue">Humidity:<br>{{ url_for('humidity') }}%</td>
+        <td class="info" style="background-color: SlateBlue">Humidity:<br><p id="humidity"></p>%</td>
       </tr>
     </table>
     <img src="{{ url_for('video_feed') }}">
   </body>
+<script>$( "#moisture" ).load( "/moisture" );</script>
+<script>$( "#temperature" ).load( "/temperature" );</script>
+<script>$( "#humidity" ).load( "/humidity" );</script>
 </html>
 
-<script>$( "#moisture" ).load( "/moisture" );</script>
