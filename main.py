@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 def index():
     templateData = {
-            'wetness' : str(pm.get_wetness()),
-            'temp' : str(pm.get_temp()),
+            'moisture' : str(pm.get_wetness()),
+            'temperature' : str(pm.get_temp()),
             'humidity' : str(pm.get_humidity())
             }
     return render_template('index.html', **templateData)
