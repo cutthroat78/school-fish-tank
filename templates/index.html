@@ -6,13 +6,12 @@
     body {
 	background-color: black;
     }
-    img {
-	align: center;
-    }
     .info {
 	color: white;
 	font-size: 60px;
-	width: 30%;
+	width: 33.33%;
+	padding: 5px;
+	float: left;
      }
     div:after {
         content: "";
@@ -23,9 +22,9 @@
   </head>
   <body>
     <div>
-      <p class="info" style="background-color: Tomato; float: left;">Moisture:<br>{{ wetness }}%</p>
-      <p class="info" style="background-color: MediumSeaGreen; float: center;">Temperature:<br>{{ temp }}°C</p>
-      <p class="info" style="background-color: SlateBlue; float: right;">Humidity:<br>{{ humidity }}%</p>
+      <p class="info" style="background-color: Tomato">Moisture:<br>{{ wetness }}%</p>
+      <p class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temp }}°C</p>
+      <p class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity }}%</p>
     </div>
     <img src="{{ url_for('video_feed') }}">
   </body>
