@@ -10,8 +10,6 @@
 	color: white;
 	font-size: 60px;
 	width: 33.33%;
-	padding: 5px;
-	float: left;
      }
     div:after {
         content: "";
@@ -21,10 +19,12 @@
     </style>
   </head>
   <body>
-    <div>
-      <p class="info" style="background-color: Tomato">Moisture:<br>{{ wetness }}%</p>
-      <p class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temp }}°C</p>
-      <p class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity }}%</p>
+    <table style="width: 100%;">
+      <tr>
+        <td class="info" style="background-color: Tomato">Moisture:<br>{{ wetness }}%</td>
+        <td class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temp }}°C</td>
+        <td class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity }}%</td>
+      </tr>
     </div>
     <img src="{{ url_for('video_feed') }}">
   </body>
