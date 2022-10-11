@@ -26,15 +26,18 @@ def video_feed():
 
 @app.route('/moisture')
 def moisture():
-    return Response(str(pm.get_wetness()))
+    return Response(str(pm.get_wetness()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/temperature')
 def temperature():
-    return Response(str(pm.get_temp()))
+    return Response(str(pm.get_temp()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/humidity')
 def humidity():
-    return Response(str(pm.get_humidity()))
+    return Response(str(pm.get_humidity()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
