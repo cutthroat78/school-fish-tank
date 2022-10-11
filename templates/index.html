@@ -17,23 +17,19 @@
         clear: both;
      }
     </style>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
   <body>
     <table style="width: 100%;">
       <tr>
-	<td class="info" style="background-color: Tomato">Moisture:<br><p id="moisture"></p>%</td>
+	      <td class="info" style="background-color: Tomato">Moisture:<br>{{ moisture  }}%</td>
 	<td style="width: 20%"></td>
-        <td class="info" style="background-color: MediumSeaGreen">Temperature:<br><p id="temperature"></p>°C</td>
+	<td class="info" style="background-color: MediumSeaGreen">Temperature:<br>{{ temperature  }}°C</td>
 	<td style="width: 20%"></td>
-        <td class="info" style="background-color: SlateBlue">Humidity:<br><p id="humidity"></p>%</td>
+	<td class="info" style="background-color: SlateBlue">Humidity:<br>{{ humidity  }}%</td>
       </tr>
     </table>
     <img src="{{ url_for('video_feed') }}">
   </body>
-<script>$( "#moisture" ).load( "/moisture" );</script>
-<script>$( "#temperature" ).load( "/temperature" );</script>
-<script>$( "#humidity" ).load( "/humidity" );</script>
 <script>
     $(document).ready(function() {
         // auto refresh page after 1 second
