@@ -29,11 +29,11 @@ def moisture():
     return Response(str(pm.get_wetness()))
 
 @app.route('/temperature')
-def moisture():
+def temperature():
     return Response(str(pm.get_temp()))
 
 @app.route('/humidity')
-def moisture():
+def humidity():
     return Response(str(pm.get_humidity()))
 
 if __name__ == '__main__':
