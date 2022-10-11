@@ -29,5 +29,9 @@ def video_feed():
     return Response(gen(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/moisture')
+def moisture():
+    return Response(str(pm.get_wetness())
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
